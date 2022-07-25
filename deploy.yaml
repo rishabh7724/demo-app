@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: mydemo-app
+  labels:
+    name: mydemo-app
+spec:
+  containers:
+  - name: mydemo-app
+    image: adarshraj73/demo-app:1.0
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+
+
+  
